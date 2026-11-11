@@ -1,0 +1,66 @@
+{
+  "issues": [
+    {
+      "number": 1, "title": "Alignment", "state": "open",
+      "html_url": "https://github.com/acme/demo/issues/1",
+      "labels": [{"name": "alignment"}],
+      "body": "## Goal\nShip the demo.\n\n**People:** @ana (manager), @bo, @cy\n**Lease:** 2h\n**Project:** https://github.com/users/acme/projects/3\n"
+    },
+    {
+      "number": 10, "title": "Parse meter files", "state": "open",
+      "html_url": "https://github.com/acme/demo/issues/10",
+      "labels": [{"name": "task"}],
+      "body": "**Criterion:** tests in tests/test_parse.py pass\n**Paths:** src/parse/, docs/parse.md\n**Decisions:** D-20\n"
+    },
+    {
+      "number": 11, "title": "Speed up the parser", "state": "open",
+      "html_url": "https://github.com/acme/demo/issues/11",
+      "labels": [{"name": "task"}],
+      "body": "**Criterion:** parse 1 GB in under 60 s\n**Paths:** ./src/parse/fast.py\n**Decisions:** none\n"
+    },
+    {
+      "number": 12, "title": "Write the README", "state": "open",
+      "html_url": "https://github.com/acme/demo/issues/12",
+      "labels": [{"name": "task"}],
+      "body": "**Criterion:** README explains how to run it\n**Paths:** README.md\n**Stages:** implement, review\n"
+    },
+    {
+      "number": 13, "title": "Parse meter files!", "state": "open",
+      "html_url": "https://github.com/acme/demo/issues/13",
+      "labels": [{"name": "task"}],
+      "body": "**Criterion:** same thing, filed twice\n**Paths:** none\n"
+    },
+    {
+      "number": 20, "title": "Which file format?", "state": "open",
+      "html_url": "https://github.com/acme/demo/issues/20",
+      "labels": [{"name": "decision"}, {"name": "proposed"}],
+      "body": "**Question:** CSV or Parquet?\n**Options:** A CSV, B Parquet\n**People:** @ana, @bo\n**Deadline:** 2026-11-15\n"
+    },
+    {
+      "number": 21, "title": "Use Parquet everywhere", "state": "open",
+      "html_url": "https://github.com/acme/demo/issues/21",
+      "labels": [{"name": "decision"}, {"name": "proposed"}],
+      "body": "**Question:** Parquet for all outputs?\n**People:** @ana, @bo, @cy\n**Supersedes:** D-20\n"
+    },
+    {
+      "number": 22, "title": "Ana and Bo agreed to drop the dashboard", "state": "open",
+      "html_url": "https://github.com/acme/demo/issues/22",
+      "labels": [{"name": "decision"}, {"name": "proposed"}],
+      "body": "**Question:** Drop the dashboard?\n**People:** @ana, @bo\n**Source:** verbal (ana, bo)\n"
+    },
+    {
+      "number": 23, "title": "New goal: support gas meters too", "state": "open",
+      "html_url": "https://github.com/acme/demo/issues/23",
+      "labels": [{"name": "decision"}, {"name": "proposed"}],
+      "body": "**Question:** Change the goal?\n**People:** @ana, @bo, @cy\n**Goal change:** yes\n"
+    },
+    {
+      "number": 30, "title": "A pull request", "state": "open", "pull_request": {},
+      "labels": [{"name": "task"}], "body": ""
+    },
+    {
+      "number": 31, "title": "Unrelated bug", "state": "open",
+      "labels": [{"name": "bug"}], "body": ""
+    }
+  ]
+}

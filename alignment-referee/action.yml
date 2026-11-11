@@ -1,0 +1,18 @@
+name: alignment-referee
+description: Keeps a team board of GitHub issues honest. Claims, leases, votes and stuck tasks go through one referee, in order.
+inputs:
+  token:
+    description: Token for issues. The workflow's own token is enough.
+    default: ${{ github.token }}
+  project-token:
+    description: Fine-grained token that can edit the GitHub Project. Optional; without it, Project fields stay as they are.
+    default: ""
+runs:
+  using: composite
+  steps:
+    - shell: bash
+      run: python3 -m referee.main
+      env:
+        PYTHONPATH: ${{ github.action_path }}
+        GH_TOKEN: ${{ inputs.token }}
+        PROJECT_TOKEN: ${{ inputs.project-token }}

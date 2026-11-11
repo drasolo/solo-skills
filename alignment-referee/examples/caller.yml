@@ -1,0 +1,17 @@
+# Copy to .github/workflows/alignment.yml in the code repo. This is the repo's whole footprint,
+# besides one line in AGENTS.md.
+name: alignment referee
+on:
+  issue_comment: {types: [created]}
+  push:
+  schedule: [{cron: "17 * * * *"}]
+  workflow_dispatch:
+concurrency: {group: alignment-referee, cancel-in-progress: false}
+permissions: {issues: write, contents: read}
+jobs:
+  referee:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: OWNER/solo-skills/alignment-referee@v1
+        with:
+          project-token: ${{ secrets.ALIGNMENT_TOKEN }}

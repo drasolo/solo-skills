@@ -14,7 +14,7 @@ Grill the manager on:
 - the grouping field and its values, with the profile's default as your recommendation;
 - the lease length, the profile's default recommended;
 - stack defaults: Python unless the team says otherwise (with uv and pytest as the suggestion);
-- the referee action to use: look for an `alignment-referee` repo with `gh repo list <owner> --json name`; if none is found, ask for its `owner/repo`.
+- the referee action to use: it ships in the `alignment-referee` folder of the `solo-skills` repo these skills come from, so the default is `<owner>/solo-skills/alignment-referee@v1`. Ask whose copy or fork to use.
 
 Done when each of these has an answer.
 
@@ -47,7 +47,7 @@ Show the manager the full list of what will be created, then do it:
        referee:
          runs-on: ubuntu-latest
          steps:
-           - uses: <owner>/alignment-referee@v1
+           - uses: <referee action>
              with:
                project-token: ${{ secrets.ALIGNMENT_TOKEN }}
      ```
