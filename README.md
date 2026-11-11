@@ -10,6 +10,10 @@ Agent skills for building and checking AI work, and for running several coding a
 | `agent-router` | Picks the agent, model and stages for each task. |
 | `alignment-referee` | The GitHub Action behind alignment-grill's board. Not a skill. |
 
+## Credit
+
+`grill-ai` and `alignment-grill` take their idea from the `grill-me` skill by [Matt Pocock](https://github.com/mattpocock), in [mattpocock/skills](https://github.com/mattpocock/skills): ask the decisions in rounds, each with a recommended answer, until you and the agent agree. They share no text with it. They only apply the idea to AI systems and to team alignment.
+
 ## grill-ai
 
 Asks you about an AI system's decisions one round at a time, then reviews the code and the evidence. Covers classical ML, deep learning, LLM apps, RAG, agents and other model-based systems, with one reference file per kind.
