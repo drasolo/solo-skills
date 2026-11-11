@@ -1,0 +1,5 @@
+interface:
+  display_name: "Alignment Grill"
+  short_description: "Align people and agents on a GitHub board"
+policy:
+  allow_implicit_invocation: false

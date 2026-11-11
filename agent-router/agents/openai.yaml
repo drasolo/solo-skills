@@ -1,0 +1,3 @@
+interface:
+  display_name: "Agent Router"
+  short_description: "Pick the agent and model for each task stage"
