@@ -12,7 +12,7 @@ Agent skills for building and checking AI work, and for running several coding a
 
 ## Credit
 
-`grill-ai` and `alignment-grill` take their idea from the `grill-me` skill by [Matt Pocock](https://github.com/mattpocock), in [mattpocock/skills](https://github.com/mattpocock/skills): ask the decisions in rounds, each with a recommended answer, until you and the agent agree. They share no text with it. They only apply the idea to AI systems and to team alignment.
+`grill-ai` and `alignment-grill` take their idea from the `grill-me` skill by [Matt Pocock](https://github.com/mattpocock), in [mattpocock/skills](https://github.com/mattpocock/skills): map the decisions as a design tree, ask the whole frontier of open questions in one round, each with a recommended answer, and go on until you and the agent agree. They borrow that method and its terms, and apply it to AI systems (`grill-ai`) and to team alignment (`alignment-grill`). The rest is new.
 
 ## grill-ai
 
